@@ -14,6 +14,7 @@ public class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
+    // 테스트 코드가 돌때마다 clear해주면서 각자의 테스트 케이스가 독립성을 유지하도록 한다.
     @AfterEach
     public void aftereach(){
     repository.clearStore();

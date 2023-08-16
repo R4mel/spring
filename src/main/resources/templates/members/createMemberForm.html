@@ -1,18 +1,18 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
 
 <div class="container">
-  <div>
-    <h1>Hello Spring</h1>
-    <p>회원 기능</p>
-    <p>
-      <a href="/members/new">회원 가입</a>
-      <a href="/members">회원 목록</a>
-    </p>
-  </div>
-</div>
 
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요" />
+        </div>
+        <button type="submit">등록</button>
+    </form>
+
+</div> <!-- /container -->
 
 </body>
 </html>

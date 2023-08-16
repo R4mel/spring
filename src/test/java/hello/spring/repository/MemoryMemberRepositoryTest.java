@@ -42,7 +42,7 @@ public class MemoryMemberRepositoryTest {
 
         Member member2 = new Member();
         member2.setName("spring2");
-        repository.save(member1);
+        repository.save(member2);
 
         Member result = repository.findByName("spring1").get();
 
